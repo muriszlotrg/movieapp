@@ -1,0 +1,32 @@
+﻿    <div ng-include="'app/views/topnavbar.html'"></div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-md-12 ">
+            <div class="icon-addon addon-lg">
+                <input id="search" type="text" ng-model="data.searchTerm" 
+                    ng-change="movies.search(data.searchTerm)" class="form-control"
+                    placeholder="Search">
+                <label for="searh" class="glyphicon glyphicon-search" 
+                rel="tooltip" title="search"></label>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+
+
+        <div ng-repeat="movie in movies.data.moviesList" class="col-md-6 ">
+            <div class="latest-movie">
+                <a href="#" ng-click='movies.openMovie(movie)'>
+                    <img src="{{movies.imgUrl}}{{movie.poster_path}}"
+                     class="img-responsive" alt="Movie 3"></a>
+                <a href="#">
+                    <h3 ng-click='movies.openMovie(movie)'>{{movie.title}}</h3>
+                </a>
+            </div>
+
+
+
+
+        </div>
+    </div>

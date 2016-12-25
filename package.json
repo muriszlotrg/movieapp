@@ -1,0 +1,28 @@
+{
+  "name": "movie-web-app",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "bower install"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/angular": "^1.5.22",
+    "@types/jquery": "^2.0.34",
+    "angular": "^1.6.1",
+    "bower": "^1.8.0",
+    "browser-sync": "^2.18.5",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-iife": "^0.3.0",
+    "gulp-typescript": "^3.1.3",
+    "jquery": "^3.1.1",
+    "run-sequence": "^1.2.2",
+    "tslint": "^4.1.1",
+    "typescript": "^2.1.4",
+    "wiredep": "^4.0.0"
+  }
+}

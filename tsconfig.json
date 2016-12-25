@@ -1,0 +1,32 @@
+{
+  "compileOnSave": false,
+  "filesGlob": [
+    "./typings/globals/**/*.*.ts",
+    "./app/**/*.ts"
+  ],
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": false,
+    "lib": [
+      "dom",
+      "es2015",
+      "es2016"
+    ],
+    "module": "none",
+    "target": "es5",
+    "moduleResolution": "classic",
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "outDir": "./dist",
+    "sourceMap": true
+  },
+  "rootDir": "./app",
+  "include": [
+    "typings/index.d.ts",
+    "app/**/*.ts"
+  ]
+}

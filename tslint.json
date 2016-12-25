@@ -1,0 +1,29 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore"
+    ],
+    "max-line-length": 150,
+    "no-namespace": false,
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "never",
+        "singleline": "never"
+      }
+    ],
+    "object-literal-sort-keys": false,
+    "max-classes-per-file": false,
+    "only-arrow-functions": false,
+    "object-literal-key-quotes": [true, "as-needed"]
+  },
+  "rulesDirectory": []
+}

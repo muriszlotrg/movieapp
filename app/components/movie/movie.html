@@ -1,0 +1,34 @@
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-md-12 ">
+
+            <a class="back" ui-sref="index.movies">
+                < Back</a>
+
+                    <h3>{{movie.movie.title}}</h3>
+                    <div class="latest-movie">
+                        <a href="#">
+                            <img ng-if="!movie.movie.YTUrl" 
+                            src="https://image.tmdb.org/t/p/w500{{movie.movie.poster_path}}" 
+                            class="img-responsive" alt="Movie 3">
+                        </a>
+
+                        <div ng-if="movie.movie.YTUrl">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" 
+                                src="{{movie.movie.YTUrl}}">
+                                </iframe>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div>
+                        <h4>Movie overview:</h4>
+                        {{movie.movie.overview}}
+
+                    </div>
+
+        </div>
+    </div>

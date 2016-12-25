@@ -1,0 +1,14 @@
+node_modules/
+npm-debug.log
+bower_components/
+typings/
+.idea/
+.DS_Store
+.vscode/
+
+bundle.js
+
+public/
+# Ignore generated .js
+app/**/*.js
+dist/**/*.js
